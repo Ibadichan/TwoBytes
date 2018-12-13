@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<title>TwoBytes</title>
+		<link rel="stylesheet" href="stylesheets/main.css">
+  </head>
+  <body>
+    <header class="main-header">
+			<nav class="main-navigation container">
+				<a class="main-header-logo">
+					<img src="img/logo.png" alt="TwoBytes Logo" width="133" height="44">
+				</a>
+
+				<ul class="site-navigation">
+					<li class="site-navigation-current"><a>Home</a></li>
+					<li><a href="about-us.html">About us</a></li>
+					<li><a href="jobs.html">Jobs</a></li>
+					<li><a href="clients.html">Clients</a></li>
+					<li><a href="employers.html">Employers</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<div class="search-job container">
+				<p class="search-job-header">I’m looking for..</p>
+
+				<form action="/search-job" method="GET" class="search-job-form">
+					<p class="search-job-item">
+						<label for="search-job-description" class="visually-hidden">Job Description</label>
+						<input type="search" name="description"
+									 placeholder="Enter a Job Description"
+									 class="search-job-description" id="search-job-description">
+					</p>
+
+					<div class="search-job-columns">
+						<p class="search-job-item">
+							<input type="checkbox" name="fulltime"
+										 class="search-job-fulltime" id="search-job-fulltime">
+							<label for="search-job-fulltime">Full time</label>
+						</p>
+
+						<p class="search-job-item">
+							<input type="checkbox" name="freelance"
+										 class="search-job-freelance" id="search-job-freelance">
+							<label for="search-job-freelance">Part Time / Casual / Freelance</label>
+						</p>
+
+						<p class="search-job-item search-job-select-wrapper">
+							<label for="search-job-location">Select your Location:</label>
+							<select name="location" id="search-job-location" class="search-job-location">
+								<option value="all">Select your Location</option>
+								<option value="ru">Russia</option>
+								<option value="it">Italy</option>
+								<option value="en">England</option>
+							</select>
+						</p>
+					</div>
+
+					<button type="submit" class="search-button">Search</button>
+				</form>
+			</div>
+		</header>
+
+		<main>
+			<h1 class="visually-hidden">The Digital Recruitment Company - TwoBytes</h1>
+
+			<section class="about-us">
+				<div class="container">
+					<h2>
+						We’re leaders in<br>
+						<span>Creative Digital Recruitment</span>
+					</h2>
+
+					<p class="about-us-text">
+						Based in Surry Hills, the creative hub of Sydney we are surrounded by creativity
+						and that reflects on the type of jobs we recruit for.
+					</p>
+
+					<a class="about-us-link" href="about.html">Find out more about us!</a>
+				</div>
+			</section>
+
+			<section class="subscription">
+				<div class="container">
+					<h2>Subscribe to our Job Seeker Mailing List</h2>
+
+					<form action="/subscribe" method="POST">
+						<p class="subscribe-form-item">
+							<label for="subscriber-email" class="visually-hidden">Your Email Address</label>
+							<input type="email" name="email" placeholder="Enter Your Email Address"
+											class="subscriber-email" id="subscriber-email">
+						</p>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="main-footer">
+			<div class="container">
+				<div class="main-footer-info">
+					<b class="our-email">hello@twobytes.com.au</b>
+					<p class="copyright">
+						Copyright © 2014 Two Bytes Consulting. <b>Terms & Policies.</b>
+					</p>
+				</div>
+
+				<ul class="footer-social">
+					<li>
+						<a href="#" class="twitter-button">Tweet</a>
+						<span class="tweet-count">692</span>
+					</li>
+					<li>
+						<a href="#" class="facebook-button">Like</a>
+						<span class="like-count">117</span>
+					</li>
+				</ul>
+			</div>
+		</footer>
+  </body>
+</html>
