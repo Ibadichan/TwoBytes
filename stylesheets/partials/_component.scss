@@ -1,0 +1,172 @@
+// header
+.main-header {
+  min-height: 860px;
+  color: white;
+  background: #f5f5f5 url('../img/header_background.jpg') top center no-repeat / cover;
+
+  .site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.site-navigation a {
+  @include calculate_font(14px, 25px, white);
+  text-transform: uppercase;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active,
+  &.site-navigation-current {
+    opacity: 0.3;
+  }
+}
+
+.search-job {
+  font-style: italic;
+
+  &-header {
+    @include calculate_font(55px, 55px);
+  }
+
+  &-description {
+    font: inherit;
+
+    &::placeholder {
+      color: #c7c7c7;
+    }
+  }
+
+  &-fulltime + label,
+  &-freelance + label,
+  &-location {
+    font: inherit;
+    @include calculate_font(13px, 25px);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &-location {
+    color: #c7c7c7;
+  }
+
+  .search-button {
+    padding: 0;
+    font: inherit;
+    @include calculate_font(20px, 25px, white);
+    border: 0;
+    background-color: #4acaff;
+    cursor: pointer;
+  }
+}
+
+// about us
+.about-us {
+  min-height: 595px;
+  text-align: center;
+
+  h2 {
+    @include calculate_font(30px, 30px, #585858, 400, italic);
+  }
+
+  .our-work {
+    @include calculate_font(45px, 45px, false, 700, normal);
+  }
+
+  &-link {
+    @include calculate_font(15px, 15px, #4acaff);
+    text-transform: uppercase;
+    border: 2px solid #4acaff;
+    border-radius: 5px;
+
+    &:hover, &:focus {
+      color: #8e44ad;
+      border-color: #8e44ad;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+// subscription
+.subscription {
+  min-height: 450px;
+  color: white;
+  text-align: center;
+  background-color: #131c25;
+
+  h2 {
+    @include calculate_font(18px, 18px, false, 400);
+  }
+
+  .subscriber-email {
+    padding: 0;
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid #4acaff;
+    border-radius: 5px;
+
+    &::placeholder {
+      @include calculate_font(14px, 25px, white, false, italic);
+    }
+  }
+}
+
+// footer
+.main-footer {
+  min-height: 185px;
+}
+
+.main-footer-info {
+  @include calculate_font(14px, 14px);
+
+  .our-email {
+    font-weight: 700;
+  }
+
+  .copyright {
+    color: #a6a5a5;
+  }
+}
+
+.copyright a {
+  font-weight: 700;
+  color: #585858;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .twitter-button {
+    @include calculate_font(12px, 25px, #186487);
+    border: 2px solid #a4cce5;
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #d5e6ef 0%, #ffffff 100%);
+  }
+
+  .tweet-count {
+    @include calculate_font(12px, 25px, #2a7090, 700);
+    border: 1px solid #cee3f0;
+    border-radius: 2px;
+  }
+
+  .facebook-button {
+    @include calculate_font(12px, 25px, #3b5998);
+    border: 1px solid #cad4e7;
+    border-radius: 2px;
+    background-color: #eceef5;
+  }
+
+  .like-count {
+    @include calculate_font(12px, 25px, black);
+    border: 1px solid #d1d1d1;
+  }
+}
