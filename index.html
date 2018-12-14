@@ -14,7 +14,7 @@
 				</a>
 
 				<ul class="site-navigation">
-					<li><a class="site-navigation-current">Home</a></li>
+					<li class="site-navigation-current"><a>Home</a></li>
 					<li><a href="about-us.html">About us</a></li>
 					<li><a href="jobs.html">Jobs</a></li>
 					<li><a href="clients.html">Clients</a></li>
@@ -27,7 +27,7 @@
 				<p class="search-job-header">I’m looking for..</p>
 
 				<form action="/search-job" method="GET" class="search-job-form">
-					<p class="search-job-item">
+					<p class="search-job-description-wrapper">
 						<label for="search-job-description" class="visually-hidden">Job Description</label>
 						<input type="search" name="description"
 									 placeholder="Enter a Job Description"
@@ -35,19 +35,19 @@
 					</p>
 
 					<div class="search-job-columns">
-						<p class="search-job-item">
+						<p class="search-job-fulltime-wrapper">
 							<input type="checkbox" name="fulltime"
-										 class="search-job-fulltime" id="search-job-fulltime">
+										 class="search-job-fulltime visually-hidden" id="search-job-fulltime">
 							<label for="search-job-fulltime">Full time</label>
 						</p>
 
-						<p class="search-job-item">
+						<p class="search-job-freelance-wrapper">
 							<input type="checkbox" name="freelance"
-										 class="search-job-freelance" id="search-job-freelance">
+										 class="search-job-freelance visually-hidden" id="search-job-freelance">
 							<label for="search-job-freelance">Part Time / Casual / Freelance</label>
 						</p>
 
-						<p class="search-job-item search-job-select-wrapper">
+						<p class="search-job-location-wrapper">
 							<label for="search-job-location" class="visually-hidden">Select your Location:</label>
 							<select name="location" id="search-job-location" class="search-job-location">
 								<option value="all">Select your Location</option>
