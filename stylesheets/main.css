@@ -389,7 +389,8 @@ input[type=radio].visually-hidden {
   min-height: 860px;
   padding: 85px 0;
   color: white;
-  background: lightgray url("../img/header_background.jpg") top center no-repeat/cover;
+  background: lightgray url("../img/header_background.jpg") top center no-repeat;
+  background-size: cover;
 }
 .main-header .main-navigation {
   display: flex;
@@ -417,7 +418,8 @@ input[type=radio].visually-hidden {
   bottom: 0;
   height: 7px;
   width: 100%;
-  background: transparent url("../img/section_separator.png") 0 0 no-repeat/cover;
+  background: transparent url("../img/section_separator.png") 0 0 no-repeat;
+  background-size: cover;
 }
 
 .site-navigation li {
@@ -683,7 +685,8 @@ input[type=radio].visually-hidden {
   bottom: 0;
   height: 7px;
   width: 100%;
-  background: transparent url("../img/section_separator.png") 0 0 no-repeat/cover;
+  background: transparent url("../img/section_separator.png") 0 0 no-repeat;
+  background-size: cover;
 }
 
 .subscription {
@@ -727,7 +730,8 @@ input[type=radio].visually-hidden {
   bottom: 0;
   height: 7px;
   width: 100%;
-  background: transparent url("../img/section_separator.png") 0 0 no-repeat/cover;
+  background: transparent url("../img/section_separator.png") 0 0 no-repeat;
+  background-size: cover;
 }
 
 .main-footer {

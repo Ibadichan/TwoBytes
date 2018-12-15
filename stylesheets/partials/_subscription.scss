@@ -38,6 +38,7 @@
     bottom: 0;
     height: 7px;
     width: 100%;
-    background: transparent url('../img/section_separator.png') 0 0 no-repeat / cover;
+    background: transparent url('../img/section_separator.png') 0 0 no-repeat;
+    background-size: cover;
   }
 }
