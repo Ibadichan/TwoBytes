@@ -1,0 +1,132 @@
+.main-footer {
+  min-height: 185px;
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.main-footer-info {
+  width: 415px;
+  @include calculate_font(14px, 14px);
+
+  .our-email {
+    display: block;
+    margin-bottom: 25px;
+    padding: 1.5px 0 1.5px 35px;
+    font-weight: 700;
+    background: transparent url('../img/mail_icon_2.png') 0 0 no-repeat;
+  }
+
+  .copyright {
+    margin: 0;
+    color: #a6a5a5;
+  }
+}
+
+.copyright a {
+  font-weight: 700;
+  color: #585858;
+}
+
+.footer-social {
+  display: flex;
+  flex-flow: row wrap;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .twitter-button {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 5px;
+    @include calculate_font(12px, 20px, #186487);
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #a4cce5;
+    border-radius: 3px;
+    background-image: linear-gradient(to top, #d5e6ef 0%, #ffffff 100%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 15px;
+      height: 12px;
+      background: transparent url('../img/twitter_icon.png') 0 0 no-repeat;
+    }
+  }
+
+  .tweet-count {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    @include calculate_font(12px, 20px, #2a7090);
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #cee3f0;
+    border-radius: 3px;
+    background-color: white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -3px;
+      width: 5px;
+      height: 5px;
+      border: 1px solid #cee3f0;
+      border-right: 0;
+      border-bottom: 0;
+      background-color: white;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+
+  .facebook-button {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 5px;
+    @include calculate_font(12px, 20px, #3b5998);
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #cad4e7;
+    border-radius: 3px;
+    background: #eceef5 url('../img/facebook_icon.png') 5px 50% no-repeat;
+  }
+
+  .like-count {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    @include calculate_font(12px, 20px, black);
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #d1d1d1;
+    background-color: white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -3px;
+      width: 5px;
+      height: 5px;
+      border: 1px solid #d1d1d1;
+      border-right: 0;
+      border-bottom: 0;
+      background-color: white;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+}
