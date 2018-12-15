@@ -619,36 +619,71 @@ input[type=radio].visually-hidden {
 }
 
 .about-us {
+  position: relative;
   min-height: 595px;
+  padding: 100px 0;
   text-align: center;
 }
 .about-us h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 100px;
   font-size: 30px;
   line-height: 30px;
   color: #585858;
   font-weight: 400;
   font-style: italic;
 }
+.about-us h2::after {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  width: 138px;
+  height: 5px;
+  background-color: #4acaff;
+  transform: translateX(-50%);
+}
 .about-us .our-work {
+  display: block;
+  margin-top: 18px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   font-style: normal;
 }
+.about-us-text {
+  margin: 0 50px 70px;
+  line-height: 25px;
+}
 .about-us-link {
+  display: inline-block;
+  width: 280px;
+  padding: 25px 10px;
   font-size: 15px;
   line-height: 15px;
   color: #4acaff;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
   border: 2px solid #4acaff;
   border-radius: 5px;
+  background: transparent;
 }
 .about-us-link:hover, .about-us-link:focus {
-  color: #8e44ad;
-  border-color: #8e44ad;
+  opacity: 0.7;
 }
 .about-us-link:active {
   opacity: 0.3;
+}
+.about-us::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 7px;
+  width: 100%;
+  background: transparent url("../img/section_separator.png") 0 0 no-repeat/cover;
 }
 
 .subscription {
@@ -658,6 +693,7 @@ input[type=radio].visually-hidden {
   background-color: #131c25;
 }
 .subscription h2 {
+  margin: 0;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;

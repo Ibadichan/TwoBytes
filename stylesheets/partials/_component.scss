@@ -1,33 +1,3 @@
-// about us
-.about-us {
-  min-height: 595px;
-  text-align: center;
-
-  h2 {
-    @include calculate_font(30px, 30px, #585858, 400, italic);
-  }
-
-  .our-work {
-    @include calculate_font(45px, 45px, false, 700, normal);
-  }
-
-  &-link {
-    @include calculate_font(15px, 15px, #4acaff);
-    text-transform: uppercase;
-    border: 2px solid #4acaff;
-    border-radius: 5px;
-
-    &:hover, &:focus {
-      color: #8e44ad;
-      border-color: #8e44ad;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-}
-
 // subscription
 .subscription {
   min-height: 450px;
@@ -36,6 +6,7 @@
   background-color: #131c25;
 
   h2 {
+    margin: 0;
     @include calculate_font(18px, 18px, false, 400);
   }
 

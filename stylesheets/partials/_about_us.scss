@@ -1,0 +1,66 @@
+.about-us {
+  position: relative;
+  min-height: 595px;
+  padding: 100px 0;
+  text-align: center;
+
+  h2 {
+    position: relative;
+    margin: 0;
+    margin-bottom: 100px;
+    @include calculate_font(30px, 30px, #585858, 400, italic);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -45px;
+      left: 50%;
+      width: 138px;
+      height: 5px;
+      background-color: #4acaff;
+      transform: translateX(-50%);
+    }
+  }
+
+  .our-work {
+    display: block;
+    margin-top: 18px;
+    @include calculate_font(45px, 45px, false, 700, normal);
+  }
+
+  &-text {
+    margin: 0 50px 70px;
+    line-height: 25px;
+  }
+
+  &-link {
+    display: inline-block;
+    width: 280px;
+    padding: 25px 10px;
+    @include calculate_font(15px, 15px, #4acaff);
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #4acaff;
+    border-radius: 5px;
+    background: transparent;
+
+    &:hover, &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 7px;
+    width: 100%;
+    background: transparent url('../img/section_separator.png') 0 0 no-repeat / cover;
+  }
+}
